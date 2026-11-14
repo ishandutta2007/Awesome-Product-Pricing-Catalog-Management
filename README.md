@@ -237,7 +237,7 @@ If you found this curated list helpful, please consider showing your support:
 Contributions are welcome! Please check out our contribution guidelines below:
 
 - To add a new platform or tool, submit a PR adding the tool under the appropriate section.
-- For open-source tools, include the repository URL, stack, license, primary use case, and keep repositories ordered by GitHub Stars_Count.
+- For open-source tools, include the repository URL, stack, license, primary use case, and keep repositories ordered by GitHub_Stars_Count.
 - For SaaS solutions, ensure transparent disclosure of entry-tier pricing models and free trial/sandbox specifications.
 
 ---
