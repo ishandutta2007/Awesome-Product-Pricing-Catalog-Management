@@ -1,153 +1,220 @@
-# Awesome-Product-Pricing-Catalog-Management
-
 # Awesome Product & Pricing Catalog Management
 
-> A curated list of top Product and Pricing Catalog Management platforms — both SaaS/Hosted commercial CPQ and pricing engines and open-source alternatives for managing product masters, price books, and complex pricing rules.
+[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+[![Track Awesome List](https://www.trackawesomelist.com/badge.svg)](https://www.trackawesomelist.com/ishandutta2007/Awesome-Product-Pricing-Catalog-Management/)
+[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
+
+> A curated list of top **Product and Pricing Catalog Management** platforms — including enterprise Configure, Price, Quote (CPQ) suites, subscription pricing & billing engines, and open-source alternatives for orchestrating product masters, price books, bill of materials (BOM), and complex pricing rules.
+> 
 > 🌟 Star this repo if you find it useful! 🌟
 
 ---
 
 ## 📋 Table of Contents
 
-- [SaaS / Hosted Platforms](#-saas--hosted-platforms)
-  - [Chargebee Pricing Catalog](#chargebee-pricing-catalog)
-  - [DealHub Adaptive Pricebook](#dealhub-adaptive-pricebook)
-  - [Salesforce CPQ Price Books](#salesforce-cpq-price-books)
-  - [Conga CPQ Catalog](#conga-cpq-catalog)
-  - [Zuora Product Catalog](#zuora-product-catalog)
-  - [Vendavo](#vendavo)
-  - [Pricefx](#pricefx)
-  - [Tacton CPQ](#tacton-cpq)
+- [Overview & Key Concepts](#-overview--key-concepts)
+- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [SaaS & Hosted Platforms](#-saas--hosted-platforms)
 - [Open-Source Software](#-open-source-software)
-  - [Open Mercato Product Configurator](#open-mercato-product-configurator)
-  - [entirius-django-pricemanager](#entirius-django-pricemanager)
-  - [Unopim](#unopim)
-  - [ERPNext (Item & Price List)](#erpnext-item--price-list)
-  - [Odoo (Product & Pricelist)](#odoo-product--pricelist)
-- [Comparison at a Glance](#-comparison-at-a-glance)
+- [Feature Comparison Matrix](#-feature-comparison-matrix)
+- [Selection Guide: How to Choose](#-selection-guide-how-to-choose)
 - [Contributing](#-contributing)
+- [License](#-license)
 
 ---
 
-## 🟦 SaaS / Hosted Platforms
+## 💡 Overview & Key Concepts
 
-Commercial, cloud-hosted Product and Pricing Catalog Management platforms. These are not open-source but are included as reference points for feature comparison.
+Managing a modern product and pricing catalog requires bridging product information management (PIM), dynamic pricing calculation, discount governance, and downstream quote-to-cash systems:
 
-### Chargebee Pricing Catalog
-**Type:** Billing-native product catalog with multi-dimensional pricing models
-Chargebee's catalog is built directly into its subscription billing platform, supporting **Flat Fee, Tiered, Stairstep, Volume, Usage, and Seat-Based pricing models** with multi-decimal price points [citation:1]. The catalog handles hybrid billing combining recurring fees, usage-based charges, and one-time items on a single invoice. **Advanced metering** allows custom SQL configurations to define complex meters from raw usage data, with schemaless usage support so pricing metrics can change without breaking ingestion. Account hierarchies support parent-child structures up to 30 levels deep, and **Approvals on Price Points** add governance to catalog changes. The catalog is available on the Flow plan ($160/mo) and above.
-**Best for:** Subscription businesses already on Chargebee wanting a billing-integrated catalog with advanced usage metering and hybrid pricing without a separate CPQ system.
+- **Product Master / PIM:** Centralized single source of truth for SKUs, hierarchical product bundles, attributes, and digital assets.
+- **Price Books & Rate Cards:** Multi-currency, multi-dimensional pricing matrices supporting flat fee, tiered, volume, usage-based, and contracted negotiated rates.
+- **Configure, Price, Quote (CPQ):** Constraint-based configuration engines validating product combinations, calculating BOM rollups, and applying approval workflows.
+- **Usage Metering & Rating:** Ingesting high-velocity consumption events and computing billing charges based on tiered or prepaid commitments.
 
-### DealHub Adaptive Pricebook
-**Type:** CPQ with hierarchical product structuring and multi-dimensional pricebook
-DealHub provides an **Adaptive Pricebook** with hierarchical product structuring, multi-dimensional pricing, and guided quote configuration [citation:15]. The product catalog API allows programmatic management of products and bundles, with **price types including SOLID (fixed), ERP (external), and FROM_ALL_QUOTE (percentage of total)** [citation:2]. Pricing rules are evaluated sequentially in advanced mode, and product assignments can auto-add products based on conditions like region or playbook answers. The platform supports every sales motion—new business, renewals, co-terms, expansions, and amendments—with usage-based, tiered, and hybrid pricing models [citation:15].
-**Best for:** Sales-led organizations needing a modern CPQ with hierarchical product structures, multi-dimensional pricebooks, and headless API quoting for self-service or PLG motions.
+---
 
-### Salesforce CPQ Price Books
-**Type:** Enterprise CPQ with price books and layered pricing exceptions
-Salesforce CPQ uses **Price Books** as the foundation—a collection of price book entries mapping products to prices [citation:3]. When a quote is created, the selected price book provides the starting price, and CPQ layers on **pricing exceptions** and adjustments. Key pricing tools beyond price books include **Block Pricing** (flat price for quantity ranges), **Percent of Total (PoT)** pricing (percentage of other products' sum), **Option Pricing Override** (different price inside a bundle), **Cost Plus Markup**, and **Contracted Pricing** (account-specific prices) [citation:3]. A critical constraint: if a product lacks a price book entry in the selected price book, it won't appear in product selection and can't be added to the quote.
-**Best for:** Salesforce-centric enterprises already on the platform needing CPQ with layered pricing exceptions and the ability to maintain multiple price books for different customer segments.
+## 📈 Sector Overview & Market Dynamics
 
-### Conga CPQ Catalog
-**Type:** CPQ with unified admin console for products, categories, and price lists
-Conga CPQ provides a dedicated **CPQ Admin console** with primary tabs for **Products, Catalog, and Pricing** [citation:4]. The Products tab manages the product list with search filters and cloning capabilities. The Catalog tab manages categories, and the Pricing tab manages price lists. The admin console allows creating a product and associating it with categories, price lists, and price list items on a single page. Products can also be cloned to create new configurations based on existing ones.
-**Best for:** Organizations needing a structured admin interface for managing product hierarchies, categories, and price lists within a CPQ for Salesforce.
+The global Configure, Price, Quote (CPQ) and Pricing Management software market is valued at approximately **$3.5B to $4.2B (2025/2026)** and is projected to surpass **$7.5B to $8.1B by 2030**, expanding at a robust **CAGR of 15%–17%**. The sector is **moderately fragmented**: while tier-1 enterprise platforms (such as Salesforce, SAP, and Conga) anchor large-scale Fortune 500 digital transformations, specialized innovators and domain-focused CPQ/pricing engines (such as Tacton for discrete manufacturing CAD/BOM, Pricefx/Vendavo for distributor price waterfalls, and Lago/Chargebee for hybrid subscription metering) thrive across distinct verticals, preventing a single winner-take-all outcome.
 
-### Zuora Product Catalog
-**Type:** Enterprise monetization with multi-entity and multi-currency catalog
-Zuora's product catalog is part of its broader subscription management platform, supporting multi-entity management to segment financial data by geography, currency, or product line [citation:5]. The platform handles consumption revenue recognition and contract modifications for usage-based offerings. Zuora CPQ for Salesforce provides guided selling, rules engine, and ramps for subscription quoting. The catalog scales to up to 500,000 or 2,000,000 active subscribers depending on edition.
-**Best for:** Large enterprises with complex, multi-entity operations needing a catalog integrated with enterprise-grade billing and revenue recognition.
+---
 
-### Vendavo
-**Type:** AI-powered pricing for massive SKU catalogs
-Vendavo specializes in pricing for distributors and manufacturers with **massive SKU catalogs**, using AI to analyze cost changes, transaction history, customer segments, and market signals to recommend optimal prices [citation:6]. The platform manages bracket pricing, negotiated customer agreements, and layered pricing rules, with automation of price updates as costs change. It provides visibility into margin leakage and customer-specific price proliferation, with rebate and incentive management to control hidden margin risk.
-**Best for:** Food & beverage distributors and manufacturers managing thousands of SKUs with cost volatility and bracket pricing complexity.
+## 🟦 SaaS & Hosted Platforms
 
-### Pricefx
-**Type:** AI pricing software with price waterfall visibility
-Pricefx provides AI-driven pricing for finance and costing teams, with a focus on **price waterfall visibility** across manufacturing, distribution, and process industries [citation:7]. It tracks costs in real-time and provides decision support for pricing rules, automation of operational processes, and collaboration with sales on data-driven insights. The platform claims 70X ROI in the first year and 8.4% margin improvement within 12 months of Go-Live.
-**Best for:** Finance teams needing granular cost-to-price visibility and AI-recommended pricing across complex product hierarchies.
+Enterprise cloud solutions sorted in descending order of vendor scale (market valuation / enterprise capitalization):
 
-### Tacton CPQ
-**Type:** CPQ for complex manufacturing with constraint-based configuration
-Tacton CPQ is purpose-built for **complex manufacturing** with guided selling, dynamic pricing, visual configuration, and **constraint-based configuration intelligence** [citation:10]. It validates technical compatibility across software versions, hardware models, and multi-vendor solutions, with partner-specific pricing and tier-based programs. Tacton claims 30% sales/quoting labor cost savings and 60% order error cost savings. It integrates with CRM, ERP, PLM, CAD, and PIM systems.
-**Best for:** Manufacturers of highly configurable products needing technical validation and BOM-driven pricing rather than simple catalog lookups.
+| Platform | Vendor Scale / Valuation | Starting Pricing | Free Tier / Trial Limit | Key Focus & Strengths |
+| :--- | :--- | :--- | :--- | :--- |
+| **Salesforce CPQ** | ~$250B+ Market Cap | $75 / user / month (billed annually; CPQ+ at $150 / user / month) | 90-day trial via CPQ Developer Edition & Trailhead Playground orgs | Enterprise CPQ with layered pricing exceptions, block pricing, percent-of-total rules, and multi-tier price books. |
+| **Chargebee** | $3.5B Valuation | $599 / month (Performance tier billed annually; legacy Starter at $0 + 0.75% overage) | Free up to $250,000 in cumulative lifetime billing (Starter tier; no credit card required) | Billing-native catalog supporting flat-fee, stairstep, tiered, seat, and SQL-metered usage models up to 30-level hierarchies. |
+| **Zuora** | ~$1.5B Enterprise Value | Custom quote-based (Entry/Launch plans scale by ARR/volume; typically $1,000+/mo) | 14-day to 30-day guided sandbox access upon sales qualification (No open self-serve tier) | Multi-entity, multi-currency product catalog designed for high-volume enterprise subscription and consumption revenue recognition. |
+| **Conga CPQ** | ~$400M ARR (Private) | $35 – $85 / user / month (Enterprise deployments typically start at $150/user/mo) | No public free trial; guided sandbox environment available through enterprise sales demo | Unified CPQ Admin console for catalog hierarchy, category trees, and rule-based price list item associations. |
+| **Pricefx** | ~$85M ARR (Private) | Custom quote-based (Annual enterprise licensing typically starts north of $60,000/yr) | No open free tier; custom proof-of-concept (PoC) environment provided upon request | AI-driven dynamic pricing, price waterfall analytics, margin leakage protection, and real-time cost-to-price synchronization. |
+| **Vendavo** | ~$75M ARR (Private) | Custom quote-based (Enterprise contracts typically start at $80,000 – $100,000+/yr) | No open free tier; custom proof-of-concept environment provided via sales consultation | B2B price optimization for massive SKU catalogs, cost volatility tracking, bracket pricing, and rebate management. |
+| **DealHub** | ~$55M ARR / $100M+ Funding | Custom quote-based (Mid-market implementations average $60 – $100 / user / month) | No open free tier; personalized live product walkthrough and custom sandbox demo on request | Adaptive Pricebook with hierarchical bundling, SOLID/ERP/FROM_ALL_QUOTE pricing types, and headless CPQ quoting. |
+| **Tacton CPQ** | ~$45M ARR (Private) | Custom quote-based (Heavy manufacturing setups typically range $80,000 – $150,000+/yr) | No open free tier; guided pilot and technical feasibility sandbox via sales evaluation | Constraint-based 3D visual configuration, multi-level BOM generation, and engineering CAD/ERP integration for manufacturing. |
 
 ---
 
 ## 🟩 Open-Source Software
 
-Self-hosted, community-driven Product and Pricing Catalog Management tools. The open-source ecosystem is **very limited** for full CPQ, but several projects cover product information management and price management.
+Community-driven, self-hostable product catalogs, pricing engines, usage metering frameworks, and PIM repositories sorted in descending order by GitHub stars:
 
-### Open Mercato Product Configurator
-**Stack:** TypeScript / PostgreSQL / Next.js | **License:** Open Source
-Open Mercato's Product Configurator module is an open-source CPQ component for **configured products with rules, formulas, and bill-of-materials pricing** [citation:12]. The engine is a pure, deterministic evaluator in two steps: **structure** (definition, selections → settled selections, visibility, formulas, BOM quantities) and **price** (structure, unit prices, currency exponent → totals, hash). Model definitions are versioned JSON documents validated by zod, with publishing freezing a version and storing its hash. The **Studio** provides backend pages to author models through forms and tables, including a text expression editor and BOM row editor. "Configure and add to quote" writes a snapshot, then a quote line through the sales module, with reconciliation so retries never create duplicate lines. **Important:** This is a module within the broader Open Mercato ERP/CRM platform, not a standalone CPQ product—you need the full platform to use it.
-**Best for:** Developers building an open-source sales/ERP stack who need CPQ functionality with deterministic evaluation, versioned models, and BOM-based pricing, accepting the Open Mercato platform dependency.
+### 1. Odoo (Product & Pricelist)
+[![GitHub stars](https://img.shields.io/github/stars/odoo/odoo?style=social&color=white)](https://github.com/odoo/odoo/stargazers)
+- **Repository:** [odoo/odoo](https://github.com/odoo/odoo)
+- **Stack:** Python, JavaScript, PostgreSQL | **License:** LGPL-3.0
+- **Overview:** Fully featured ERP suite with native **Product & Pricelist** management. Supports advanced pricing rules, currency conversions, margin computations, volume discounts, and customer-specific price books.
+- **Best For:** Organizations seeking a complete business management suite with integrated catalog and pricing workflows.
 
-### entirius-django-pricemanager
-**Stack:** Python / Django / PostgreSQL | **License:** MPL-2.0
-entirius-django-pricemanager is a Django module for **product prices in the Entirius open-source modular ecommerce platform** [citation:13]. It stores one current price per product, sales channel, country, and currency, with an append-only history of every change. Key features include:
-- **Net/gross calculation** from tax classes and country-specific tax rates
-- **Special prices** with validity dates, attribute-level prices, and customer tier prices
-- **Write guards**: a precedence table decides which price source may overwrite another, with bounds enforcing a floor from minimum price and minimum margin over purchase cost
-- **CSV imports** for prices and tax rates via management commands
-- **Admin REST API** for price editing, channels, and tax classes, used by the CMS
+### 2. ERPNext (Item & Price List)
+[![GitHub stars](https://img.shields.io/github/stars/frappe/erpnext?style=social&color=white)](https://github.com/frappe/erpnext/stargazers)
+- **Repository:** [frappe/erpnext](https://github.com/frappe/erpnext)
+- **Stack:** Python, Frappe Framework, MariaDB | **License:** GPL-3.0
+- **Overview:** Open-source ERP providing granular **Item Master** configuration (variants, attributes, UOMs, serials) paired with versatile **Price Lists** segmented by currency, territory, and customer groups.
+- **Best For:** Teams wanting self-hosted, customizable item masters and multi-currency pricing integrated with manufacturing and sales.
 
-Requires Python 3.11+, Django 5.0+, PostgreSQL 15+. It runs inside the Entirius backend service (Volkanos) and supplies prices to the catalog and checkout [citation:13].
-**Best for:** Teams building on the Entirius ecommerce platform needing price management with tax handling, history tracking, and write guards, accepting the Entirius ecosystem dependency.
+### 3. Medusa (Pricing & Product Module)
+[![GitHub stars](https://img.shields.io/github/stars/medusajs/medusa?style=social&color=white)](https://github.com/medusajs/medusa/stargazers)
+- **Repository:** [medusajs/medusa](https://github.com/medusajs/medusa)
+- **Stack:** Node.js, TypeScript, PostgreSQL | **License:** MIT
+- **Overview:** Headless commerce engine featuring dedicated `@medusajs/pricing` and `@medusajs/product` modules. Provides price lists, multi-currency rule sets, quantity tiers, and promotion engines via headless APIs.
+- **Best For:** Developers building bespoke digital commerce platforms needing API-first pricing engine microservices.
 
-### Unopim
-**Stack:** PHP / Laravel | **License:** MIT
-Unopim is an open-source **Product Information Management (PIM) and Digital Asset Management (DAM) platform** built on Laravel, designed to manage, enrich, and scale product data beyond **10 million products** [citation:11]. It is free forever with 10,955 GitHub stars and active development. While not a CPQ or pricing engine, it provides the **product master data foundation** that a pricing catalog depends on—managing attributes, categories, variants, and digital assets at scale.
-**Best for:** Organizations needing an open-source PIM foundation to centralize product data before layering pricing logic on top, particularly those managing large catalogs.
+### 4. Saleor
+[![GitHub stars](https://img.shields.io/github/stars/saleor/saleor?style=social&color=white)](https://github.com/saleor/saleor/stargazers)
+- **Repository:** [saleor/saleor](https://github.com/saleor/saleor)
+- **Stack:** Python, Django, GraphQL, PostgreSQL | **License:** BSD-3-Clause
+- **Overview:** High-performance headless GraphQL commerce platform with multi-channel product catalogs, localized pricing, custom attribute matrices, and tax-inclusive/exclusive pricing structures.
+- **Best For:** High-volume composable commerce architectures needing granular multi-channel catalog control.
 
-### ERPNext (Item & Price List)
-**Stack:** Python / Frappe Framework / MariaDB | **License:** GPL-3.0
-ERPNext provides product catalog and pricing management through its **Item** master and **Price List** system. Items support variants, attributes, and UOMs, while Price Lists enable different pricing per customer, currency, or date range. The broader ERP includes inventory, purchasing, and selling integration. It is a full ERP rather than a dedicated CPQ or pricing engine, but provides the catalog and price list foundation within an open-source business suite.
-**Best for:** Organizations already on ERPNext wanting product and price list management integrated with inventory and sales, accepting the full ERP platform scope.
+### 5. Unopim
+[![GitHub stars](https://img.shields.io/github/stars/unopim/unopim?style=social&color=white)](https://github.com/unopim/unopim/stargazers)
+- **Repository:** [unopim/unopim](https://github.com/unopim/unopim)
+- **Stack:** PHP, Laravel, MySQL/PostgreSQL | **License:** MIT
+- **Overview:** Modern open-source Product Information Management (PIM) and Digital Asset Management (DAM) system engineered to manage and enrich millions of SKUs with complex attribute families.
+- **Best For:** Teams requiring a robust, scalable product master foundation before layering downstream pricing algorithms.
 
-### Odoo (Product & Pricelist)
-**Stack:** Python / PostgreSQL | **License:** LGPL-3.0 (Community)
-Odoo provides product catalog management through its **Product** model with variants, attributes, and categories, alongside **Pricelists** with rules for percentage discounts, fixed prices, and formulas based on cost or competitor price. The Community edition includes basic pricelist functionality; Enterprise adds advanced features. Like ERPNext, it is a full ERP with catalog and pricing as modules.
-**Best for:** Organizations already using or adopting Odoo wanting product and pricelist management within an integrated business suite.
+### 6. Lago
+[![GitHub stars](https://img.shields.io/github/stars/getlago/lago?style=social&color=white)](https://github.com/getlago/lago/stargazers)
+- **Repository:** [getlago/lago](https://github.com/getlago/lago)
+- **Stack:** Ruby on Rails, Go, PostgreSQL | **License:** AGPL-3.0
+- **Overview:** Open-source metering and usage-based billing engine. Provides an API-driven product plan catalog supporting hybrid pricing, subscription add-ons, volume tiers, pay-as-you-go meters, and prepaid credits.
+- **Best For:** SaaS, AI, and API companies looking for an open-source pricing engine to meter and rate consumption.
+
+### 7. Kill Bill
+[![GitHub stars](https://img.shields.io/github/stars/killbill/killbill?style=social&color=white)](https://github.com/killbill/killbill/stargazers)
+- **Repository:** [killbill/killbill](https://github.com/killbill/killbill)
+- **Stack:** Java, MySQL/PostgreSQL | **License:** Apache-2.0
+- **Overview:** Enterprise-grade open-source subscription billing and payments platform. Features an XML-based catalog system supporting complex plan phases, pricing alignment, price overrides, and trial rules.
+- **Best For:** Large organizations needing financial-grade subscription catalog configuration with complete data sovereignty.
+
+### 8. Pimcore
+[![GitHub stars](https://img.shields.io/github/stars/pimcore/pimcore?style=social&color=white)](https://github.com/pimcore/pimcore/stargazers)
+- **Repository:** [pimcore/pimcore](https://github.com/pimcore/pimcore)
+- **Stack:** PHP, Symfony, MySQL | **License:** GPL-3.0
+- **Overview:** Enterprise open-source platform combining PIM, MDM (Master Data Management), and DAM. Manages product structures, relations, multi-channel classification, and pricing asset associations.
+- **Best For:** Enterprises requiring centralized master data management across complex global supply chains.
+
+### 9. OpenMeter
+[![GitHub stars](https://img.shields.io/github/stars/openmeterio/openmeter?style=social&color=white)](https://github.com/openmeterio/openmeter)
+- **Repository:** [openmeterio/openmeter](https://github.com/openmeterio/openmeter)
+- **Stack:** Go, ClickHouse, PostgreSQL, Kafka | **License:** Apache-2.0
+- **Overview:** Cloud-native, high-throughput usage metering engine that collects events at scale and maps real-time consumption into dynamic price calculations and entitlement rules.
+- **Best For:** Cloud infrastructure, LLM/AI token metering, and developer platforms needing low-latency usage rating.
+
+### 10. Open Mercato Product Configurator
+[![GitHub stars](https://img.shields.io/github/stars/open-mercato/open-mercato?style=social&color=white)](https://github.com/open-mercato/open-mercato/stargazers)
+- **Repository:** [open-mercato/open-mercato](https://github.com/open-mercato/open-mercato)
+- **Stack:** TypeScript, Next.js, PostgreSQL | **License:** Open Source
+- **Overview:** Modular open-source CPQ component built for configured products with dynamic rules, mathematical formulas, and Bill of Materials (BOM) rollups evaluated deterministically via a versioned JSON schema.
+- **Best For:** Teams building an open-source quote-to-cash or ERP stack needing CPQ logic and BOM calculations.
+
+### 11. Lotus
+[![GitHub stars](https://img.shields.io/github/stars/uselotus/lotus?style=social&color=white)](https://github.com/uselotus/lotus/stargazers)
+- **Repository:** [uselotus/lotus](https://github.com/uselotus/lotus)
+- **Stack:** Python, Django, React, PostgreSQL | **License:** MIT
+- **Overview:** Open-source pricing and packaging infrastructure designed to launch and iterate SaaS pricing plans, track customer metric consumption, and manage self-serve product plans.
+- **Best For:** Growth and engineering teams running quick pricing experiments, custom entitlements, and feature gating.
+
+### 12. Akeneo PIM (Community Edition)
+[![GitHub stars](https://img.shields.io/github/stars/akeneo/pim-community-dev?style=social&color=white)](https://github.com/akeneo/pim-community-dev/stargazers)
+- **Repository:** [akeneo/pim-community-dev](https://github.com/akeneo/pim-community-dev)
+- **Stack:** PHP, Symfony, MySQL, Elasticsearch | **License:** OSL-3.0
+- **Overview:** Industry-standard Product Information Management (PIM) system dedicated to structuring product data, attribute matrices, and multi-channel localized catalog enrichment.
+- **Best For:** Omnichannel retailers and merchants harmonizing thousands of attributes and product families.
+
+### 13. entirius-django-pricemanager
+[![GitHub stars](https://img.shields.io/github/stars/entirius/entirius-django-pricemanager?style=social&color=white)](https://github.com/entirius/entirius-django-pricemanager/stargazers)
+- **Repository:** [entirius/entirius-django-pricemanager](https://github.com/entirius/entirius-django-pricemanager)
+- **Stack:** Python, Django, PostgreSQL | **License:** MPL-2.0
+- **Overview:** Lightweight Django module for modular e-commerce price management. Features net/gross tax calculation, country/channel pricing, write guards (margin floors), and complete append-only price change auditing.
+- **Best For:** Python/Django developers building tailored e-commerce backends requiring historical price auditing and margin safeguards.
 
 ---
 
-## 📊 Comparison at a Glance
+## 📊 Feature Comparison Matrix
 
-| Software | License | Stack | Product Master | Price Lists | CPQ/Configurator | Self-Hosted | Best For |
-|----------|---------|-------|----------------|-------------|-------------------|-------------|----------|
-| **Chargebee** | Proprietary | Cloud | ✅ | ✅ Multi-model | (CPQ add-on) | ❌ | Billing-native catalog |
-| **DealHub** | Proprietary | Cloud | ✅ Hierarchical | ✅ Adaptive | ✅ CPQ | ❌ | Multi-dimensional pricebook |
-| **Salesforce CPQ** | Proprietary | Cloud | ✅ | ✅ Price Books | ✅ CPQ | ❌ | Layered pricing exceptions |
-| **Conga CPQ** | Proprietary | Salesforce | ✅ Admin console | ✅ Price Lists | ✅ CPQ | ❌ | Structured CPQ admin |
-| **Zuora** | Proprietary | Cloud | ✅ Multi-entity | ✅ | ✅ Zuora CPQ | ❌ | Enterprise multi-entity |
-| **Vendavo** | Proprietary | Cloud | ✅ Massive SKUs | ✅ Bracket pricing | ❌ | ❌ | Distribution pricing |
-| **Pricefx** | Proprietary | Cloud | ✅ | ✅ Price waterfall | ❌ | ❌ | AI cost-to-price visibility |
-| **Tacton** | Proprietary | Cloud | ✅ | ✅ Partner pricing | ✅ Constraint-based | ❌ | Complex manufacturing CPQ |
-| **Open Mercato** | Open Source | TS/Postgres | (Catalog) | ✅ BOM pricing | ✅ Configurator | ✅ | Open-source CPQ module |
-| **entirius-pricemanager** | MPL-2.0 | Django/Postgres | (Check) | ✅ Price history | ❌ | ✅ | Ecommerce price management |
-| **Unopim** | MIT | PHP/Laravel | ✅ 10M+ products | ❌ | ❌ | ✅ | Open-source PIM foundation |
+| System / Tool | License Model | Deployment | Product Master / PIM | Price Books / Rules | CPQ Configurator | Usage Metering | Primary Audience |
+| :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
+| **Salesforce CPQ** | Proprietary | Cloud | ✅ Full | ✅ Price Books + Exceptions | ✅ Advanced | 🟡 Via Billing | Enterprise CRM / Direct Sales |
+| **Chargebee** | Proprietary | Cloud | ✅ Full | ✅ Multi-Model Rates | 🟡 Add-on | ✅ Advanced SQL | Subscription & Usage SaaS |
+| **Zuora** | Proprietary | Cloud | ✅ Multi-Entity | ✅ Rate Plans | ✅ Zuora CPQ | ✅ High-scale | Enterprise Monetization |
+| **Conga CPQ** | Proprietary | Salesforce / Cloud | ✅ Catalog Admin | ✅ Price Lists | ✅ Advanced | 🟡 Partner/Add-on | Multi-tier Channel Sales |
+| **Pricefx** | Proprietary | Cloud | 🟡 Integrated | ✅ AI Price Waterfall | 🟡 CPQ Module | ❌ | B2B Manufacturing / Distribution |
+| **Vendavo** | Proprietary | Cloud | 🟡 Integrated | ✅ Margin & Rebates | 🟡 CPQ Module | ❌ | Large-scale SKU Distributors |
+| **DealHub** | Proprietary | Cloud | ✅ Hierarchical | ✅ Adaptive Pricebook | ✅ Guided CPQ | ✅ Hybrid | Modern PLG & Sales-led Motions |
+| **Tacton CPQ** | Proprietary | Cloud | ✅ CAD-integrated | ✅ BOM Pricing | ✅ 3D Constraint | ❌ | Heavy & Custom Manufacturing |
+| **Odoo** | LGPL-3.0 | Self-Hosted | ✅ Full | ✅ Formulas & Rules | 🟡 Basic | 🟡 Basic | Integrated SMB / Mid-market ERP |
+| **ERPNext** | GPL-3.0 | Self-Hosted | ✅ Full | ✅ Multi-Currency Lists | 🟡 BOM-driven | 🟡 Timesheet/Log | Open-source Enterprise ERP |
+| **Medusa** | MIT | Self-Hosted | ✅ Module | ✅ Dynamic Price Lists | 🟡 Custom rules | ❌ | Headless Composable Commerce |
+| **Saleor** | BSD-3-Clause | Self-Hosted | ✅ Channels | ✅ Channel-specific | ❌ | ❌ | Composable Omnichannel Retail |
+| **Unopim** | MIT | Self-Hosted | ✅ 10M+ SKUs | ❌ External | ❌ | ❌ | High-scale Master Product Data |
+| **Lago** | AGPL-3.0 | Self-Hosted | ✅ Plans | ✅ Volume/Tiered/Hybrid | ❌ | ✅ Real-time | SaaS & AI Metered Billing |
+| **Kill Bill** | Apache-2.0 | Self-Hosted | ✅ XML Catalog | ✅ Overrides & Rules | ❌ | 🟡 Plugin-based | Self-hosted Enterprise Billing |
+| **Pimcore** | GPL-3.0 | Self-Hosted | ✅ MDM / DAM | 🟡 Basic | ❌ | ❌ | Master Product Asset Management |
+| **OpenMeter** | Apache-2.0 | Self-Hosted | 🟡 Meters | ✅ Rating Rules | ❌ | ✅ Stream (ClickHouse) | AI / Cloud Consumption Metering |
+| **Open Mercato** | Open Source | Self-Hosted | ✅ Catalog | ✅ Formulas & BOM | ✅ Configurator | ❌ | Developers Building Custom CPQ |
+| **Lotus** | MIT | Self-Hosted | ✅ Plans | ✅ Tiers & Add-ons | ❌ | ✅ Feature Access | SaaS Packaging Experiments |
+| **Akeneo PIM** | OSL-3.0 | Self-Hosted | ✅ PIM Specialist | ❌ External | ❌ | ❌ | Omnichannel Catalog Enrichment |
+| **entirius-pricemanager** | MPL-2.0 | Self-Hosted | 🟡 Channel ref | ✅ Write Guards & Audit | ❌ | ❌ | Django E-commerce Applications |
+
+---
+
+## 🎯 Selection Guide: How to Choose
+
+```
+                                  What is your primary requirement?
+                                                  │
+                 ┌────────────────────────────────┴────────────────────────────────┐
+                 ▼                                                                 ▼
+      Commercial / Turnkey Cloud                                         Open-Source / Self-Hosted
+                 │                                                                 │
+     ┌───────────┴───────────┐                                         ┌───────────┴───────────┐
+     ▼                       ▼                                         ▼                       ▼
+Sales-Led CPQ         Billing & Metering                        Complete PIM / Master     Metering & Usage Billing
+(Salesforce, DealHub, (Chargebee, Zuora)                        (Unopim, Pimcore, Akeneo) (Lago, OpenMeter, Lotus)
+Conga, Tacton)
+```
+
+1. **Enterprise Sales & Custom Products:** If you have field sales reps configuring multi-line quotes with intricate discount rules and technical constraints, opt for **Salesforce CPQ** or **DealHub** (or **Tacton** if configuring industrial machinery with CAD/BOM validation).
+2. **Subscription & High-Volume Metering:** If your products rely on recurring monthly fees, prepaid bundles, seat counts, or API token consumption, evaluate **Chargebee** or **Zuora** on SaaS, or deploy **Lago** and **OpenMeter** for self-hosted data ownership.
+3. **Product Information Foundation (PIM):** If you are managing 50,000+ SKUs across multiple distributor feeds and need localized asset enrichment before computing pricing, start with **Unopim**, **Pimcore**, or **Akeneo PIM**.
+4. **All-in-One Open-Source ERP:** If you want quote generation, price lists, inventory, and ledger accounting unified without SaaS seat licenses, deploy **Odoo** or **ERPNext**.
 
 ---
 
 ## 🤝 Contributing
 
-Contributions are welcome! If you know of an open-source Product or Pricing Catalog Management tool that should be listed here, please open a pull request with:
+Contributions are welcome! Please check out our contribution guidelines below:
 
-- Project name and URL
-- Brief description (1–2 sentences)
-- Stack and license
-- Why it stands out
-
-Please ensure the project is actively maintained (releases within the last 12 months) and genuinely open-source. Note that the open-source ecosystem for **dedicated CPQ and pricing catalog management** is **very limited and fragmented**. **Open Mercato's Product Configurator** is the most complete open-source CPQ effort, with deterministic evaluation, versioned models, and BOM pricing, but it requires the broader Open Mercato platform [citation:12]. **entirius-django-pricemanager** provides focused price management with tax handling and history for the Entirius ecommerce stack [citation:13]. **Unopim** fills the product master data gap as a scalable PIM [citation:11]. No open-source project replicates the full breadth of Salesforce CPQ, DealHub, or Tacton for enterprise-grade CPQ with complex pricing rules and partner channels—commercial platforms remain the practical choice for production-grade pricing catalog orchestration at scale.
+- To add a new platform or tool, submit a PR adding the tool under the appropriate section.
+- For open-source tools, include the repository URL, stack, license, primary use case, and keep repositories ordered by GitHub star count.
+- For SaaS solutions, ensure transparent disclosure of entry-tier pricing models and free trial/sandbox specifications.
 
 ---
 
 ## 📄 License
 
-This list is released under CC0 1.0 Universal (Public Domain). The software projects listed retain their respective licenses.
-
----
-
-⭐ **If this list helped you discover a useful tool, please star the repo!** ⭐
+This repository and compilation are licensed under the [Creative Commons Zero v1.0 Universal](LICENSE) (Public Domain Dedication). All product names, logos, and brands mentioned are property of their respective owners.
