@@ -1,25 +1,37 @@
-# Awesome Product & Pricing Catalog Management
+<div align="center">
 
-[![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
-[![Track Awesome List](https://www.trackawesomelist.com/badge.svg)](https://www.trackawesomelist.com/ishandutta2007/Awesome-Product-Pricing-Catalog-Management/)
-[![License: CC0-1.0](https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg)](LICENSE)
+<img src="./assets/banner.svg" alt="Awesome Product &amp; Pricing Catalog Management Banner" width="100%" />
 
-> A curated list of top **Product and Pricing Catalog Management** platforms — including enterprise Configure, Price, Quote (CPQ) suites, subscription pricing & billing engines, and open-source alternatives for orchestrating product masters, price books, bill of materials (BOM), and complex pricing rules.
+# 🛍️ Awesome Product & Pricing Catalog Management 🏷️
+
+<p align="center">
+  <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord " /></a>
+  <a href="https://awesome.re"><img src="https://awesome.re/badge.svg" alt="Awesome" /></a>
+  <a href="https://www.trackawesomelist.com/ishandutta2007/Awesome-Product-Pricing-Catalog-Management/"><img src="https://www.trackawesomelist.com/badge.svg" alt="Track Awesome List" /></a>
+  <a href="LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg" alt="License: CC0-1.0" /></a>
+  <a href="https://github.com/ishandutta2007"><img alt="GitHub followers" src="https://img.shields.io/github/followers/ishandutta2007?label=Follow" /></a>
+</p>
+
+> 🚀 A curated list of top **Product and Pricing Catalog Management** platforms — including enterprise Configure, Price, Quote (CPQ) suites, subscription pricing & billing engines, and open-source alternatives for orchestrating product masters, price books, bill of materials (BOM), and complex pricing rules.
 > 
 > 🌟 Star this repo if you find it useful! 🌟
+
+</div>
 
 ---
 
 ## 📋 Table of Contents
 
-- [Overview & Key Concepts](#-overview--key-concepts)
-- [Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
-- [SaaS & Hosted Platforms](#-saas--hosted-platforms)
-- [Open-Source Software](#-open-source-software)
-- [Feature Comparison Matrix](#-feature-comparison-matrix)
-- [Selection Guide: How to Choose](#-selection-guide-how-to-choose)
-- [Contributing](#-contributing)
-- [License](#-license)
+- [💡 Overview & Key Concepts](#-overview--key-concepts)
+- [📈 Sector Overview & Market Dynamics](#-sector-overview--market-dynamics)
+- [🟦 SaaS & Hosted Platforms](#-saas--hosted-platforms)
+- [🟩 Open-Source Software](#-open-source-software)
+- [📊 Feature Comparison Matrix](#-feature-comparison-matrix)
+- [🎯 Selection Guide: How to Choose](#-selection-guide-how-to-choose)
+- [💖 Support](#-support)
+- [⭐ Star History](#-star-history)
+- [🤝 Contributing](#-contributing)
+- [📄 License](#-license)
 
 ---
 
@@ -27,10 +39,10 @@
 
 Managing a modern product and pricing catalog requires bridging product information management (PIM), dynamic pricing calculation, discount governance, and downstream quote-to-cash systems:
 
-- **Product Master / PIM:** Centralized single source of truth for SKUs, hierarchical product bundles, attributes, and digital assets.
-- **Price Books & Rate Cards:** Multi-currency, multi-dimensional pricing matrices supporting flat fee, tiered, volume, usage-based, and contracted negotiated rates.
-- **Configure, Price, Quote (CPQ):** Constraint-based configuration engines validating product combinations, calculating BOM rollups, and applying approval workflows.
-- **Usage Metering & Rating:** Ingesting high-velocity consumption events and computing billing charges based on tiered or prepaid commitments.
+- 📦 **Product Master / PIM:** Centralized single source of truth for SKUs, hierarchical product bundles, attributes, and digital assets.
+- 🏷️ **Price Books & Rate Cards:** Multi-currency, multi-dimensional pricing matrices supporting flat fee, tiered, volume, usage-based, and contracted negotiated rates.
+- ⚙️ **Configure, Price, Quote (CPQ):** Constraint-based configuration engines validating product combinations, calculating BOM rollups, and applying approval workflows.
+- ⏱️ **Usage Metering & Rating:** Ingesting high-velocity consumption events and computing billing charges based on tiered or prepaid commitments.
 
 ---
 
@@ -44,7 +56,7 @@ The global Configure, Price, Quote (CPQ) and Pricing Management software market 
 
 Enterprise cloud solutions sorted in descending order of vendor scale (market valuation / enterprise capitalization):
 
-| Platform | Vendor Scale / Valuation | Starting Pricing | Free Tier / Trial Limit | Key Focus & Strengths |
+| 🏢 Platform | 💰 Vendor Scale / Valuation | 🏷️ Starting Pricing | 🎁 Free Tier / Trial Limit | ⚡ Key Focus & Strengths |
 | :--- | :--- | :--- | :--- | :--- |
 | **Salesforce CPQ** | ~$250B+ Market Cap | $75 / user / month (billed annually; CPQ+ at $150 / user / month) | 90-day trial via CPQ Developer Edition & Trailhead Playground orgs | Enterprise CPQ with layered pricing exceptions, block pricing, percent-of-total rules, and multi-tier price books. |
 | **Chargebee** | $3.5B Valuation | $599 / month (Performance tier billed annually; legacy Starter at $0 + 0.75% overage) | Free up to $250,000 in cumulative lifetime billing (Starter tier; no credit card required) | Billing-native catalog supporting flat-fee, stairstep, tiered, seat, and SQL-metered usage models up to 30-level hierarchies. |
@@ -61,94 +73,94 @@ Enterprise cloud solutions sorted in descending order of vendor scale (market va
 
 Community-driven, self-hostable product catalogs, pricing engines, usage metering frameworks, and PIM repositories sorted in descending order by GitHub stars:
 
-### 1. Odoo (Product & Pricelist)
+### 1. 💼 Odoo (Product & Pricelist)
 [![GitHub stars](https://img.shields.io/github/stars/odoo/odoo?style=social&color=white)](https://github.com/odoo/odoo/stargazers)
 - **Repository:** [odoo/odoo](https://github.com/odoo/odoo)
-- **Stack:** Python, JavaScript, PostgreSQL | **License:** LGPL-3.0
+- **Stack:** 🐍 Python, 🟨 JavaScript, 🐘 PostgreSQL | **License:** LGPL-3.0
 - **Overview:** Fully featured ERP suite with native **Product & Pricelist** management. Supports advanced pricing rules, currency conversions, margin computations, volume discounts, and customer-specific price books.
 - **Best For:** Organizations seeking a complete business management suite with integrated catalog and pricing workflows.
 
-### 2. ERPNext (Item & Price List)
+### 2. 📦 ERPNext (Item & Price List)
 [![GitHub stars](https://img.shields.io/github/stars/frappe/erpnext?style=social&color=white)](https://github.com/frappe/erpnext/stargazers)
 - **Repository:** [frappe/erpnext](https://github.com/frappe/erpnext)
-- **Stack:** Python, Frappe Framework, MariaDB | **License:** GPL-3.0
+- **Stack:** 🐍 Python, ☕ Frappe Framework, 🐬 MariaDB | **License:** GPL-3.0
 - **Overview:** Open-source ERP providing granular **Item Master** configuration (variants, attributes, UOMs, serials) paired with versatile **Price Lists** segmented by currency, territory, and customer groups.
 - **Best For:** Teams wanting self-hosted, customizable item masters and multi-currency pricing integrated with manufacturing and sales.
 
-### 3. Medusa (Pricing & Product Module)
+### 3. 🛍️ Medusa (Pricing & Product Module)
 [![GitHub stars](https://img.shields.io/github/stars/medusajs/medusa?style=social&color=white)](https://github.com/medusajs/medusa/stargazers)
 - **Repository:** [medusajs/medusa](https://github.com/medusajs/medusa)
-- **Stack:** Node.js, TypeScript, PostgreSQL | **License:** MIT
+- **Stack:** 🟩 Node.js, 🟦 TypeScript, 🐘 PostgreSQL | **License:** MIT
 - **Overview:** Headless commerce engine featuring dedicated `@medusajs/pricing` and `@medusajs/product` modules. Provides price lists, multi-currency rule sets, quantity tiers, and promotion engines via headless APIs.
 - **Best For:** Developers building bespoke digital commerce platforms needing API-first pricing engine microservices.
 
-### 4. Saleor
+### 4. 🛒 Saleor
 [![GitHub stars](https://img.shields.io/github/stars/saleor/saleor?style=social&color=white)](https://github.com/saleor/saleor/stargazers)
 - **Repository:** [saleor/saleor](https://github.com/saleor/saleor)
-- **Stack:** Python, Django, GraphQL, PostgreSQL | **License:** BSD-3-Clause
+- **Stack:** 🐍 Python, 🎸 Django, 🕸️ GraphQL, 🐘 PostgreSQL | **License:** BSD-3-Clause
 - **Overview:** High-performance headless GraphQL commerce platform with multi-channel product catalogs, localized pricing, custom attribute matrices, and tax-inclusive/exclusive pricing structures.
 - **Best For:** High-volume composable commerce architectures needing granular multi-channel catalog control.
 
-### 5. Unopim
+### 5. 🗂️ Unopim
 [![GitHub stars](https://img.shields.io/github/stars/unopim/unopim?style=social&color=white)](https://github.com/unopim/unopim/stargazers)
 - **Repository:** [unopim/unopim](https://github.com/unopim/unopim)
-- **Stack:** PHP, Laravel, MySQL/PostgreSQL | **License:** MIT
+- **Stack:** 🐘 PHP, 🔴 Laravel, 🐬 MySQL / 🐘 PostgreSQL | **License:** MIT
 - **Overview:** Modern open-source Product Information Management (PIM) and Digital Asset Management (DAM) system engineered to manage and enrich millions of SKUs with complex attribute families.
 - **Best For:** Teams requiring a robust, scalable product master foundation before layering downstream pricing algorithms.
 
-### 6. Lago
+### 6. 🦩 Lago
 [![GitHub stars](https://img.shields.io/github/stars/getlago/lago?style=social&color=white)](https://github.com/getlago/lago/stargazers)
 - **Repository:** [getlago/lago](https://github.com/getlago/lago)
-- **Stack:** Ruby on Rails, Go, PostgreSQL | **License:** AGPL-3.0
+- **Stack:** 💎 Ruby on Rails, 🐹 Go, 🐘 PostgreSQL | **License:** AGPL-3.0
 - **Overview:** Open-source metering and usage-based billing engine. Provides an API-driven product plan catalog supporting hybrid pricing, subscription add-ons, volume tiers, pay-as-you-go meters, and prepaid credits.
 - **Best For:** SaaS, AI, and API companies looking for an open-source pricing engine to meter and rate consumption.
 
-### 7. Kill Bill
+### 7. 💳 Kill Bill
 [![GitHub stars](https://img.shields.io/github/stars/killbill/killbill?style=social&color=white)](https://github.com/killbill/killbill/stargazers)
 - **Repository:** [killbill/killbill](https://github.com/killbill/killbill)
-- **Stack:** Java, MySQL/PostgreSQL | **License:** Apache-2.0
+- **Stack:** ☕ Java, 🐬 MySQL / 🐘 PostgreSQL | **License:** Apache-2.0
 - **Overview:** Enterprise-grade open-source subscription billing and payments platform. Features an XML-based catalog system supporting complex plan phases, pricing alignment, price overrides, and trial rules.
 - **Best For:** Large organizations needing financial-grade subscription catalog configuration with complete data sovereignty.
 
-### 8. Pimcore
+### 8. 🗄️ Pimcore
 [![GitHub stars](https://img.shields.io/github/stars/pimcore/pimcore?style=social&color=white)](https://github.com/pimcore/pimcore/stargazers)
 - **Repository:** [pimcore/pimcore](https://github.com/pimcore/pimcore)
-- **Stack:** PHP, Symfony, MySQL | **License:** GPL-3.0
+- **Stack:** 🐘 PHP, 🎼 Symfony, 🐬 MySQL | **License:** GPL-3.0
 - **Overview:** Enterprise open-source platform combining PIM, MDM (Master Data Management), and DAM. Manages product structures, relations, multi-channel classification, and pricing asset associations.
 - **Best For:** Enterprises requiring centralized master data management across complex global supply chains.
 
-### 9. OpenMeter
+### 9. ⚡ OpenMeter
 [![GitHub stars](https://img.shields.io/github/stars/openmeterio/openmeter?style=social&color=white)](https://github.com/openmeterio/openmeter)
 - **Repository:** [openmeterio/openmeter](https://github.com/openmeterio/openmeter)
-- **Stack:** Go, ClickHouse, PostgreSQL, Kafka | **License:** Apache-2.0
+- **Stack:** 🐹 Go, 🟡 ClickHouse, 🐘 PostgreSQL, 📨 Kafka | **License:** Apache-2.0
 - **Overview:** Cloud-native, high-throughput usage metering engine that collects events at scale and maps real-time consumption into dynamic price calculations and entitlement rules.
 - **Best For:** Cloud infrastructure, LLM/AI token metering, and developer platforms needing low-latency usage rating.
 
-### 10. Open Mercato Product Configurator
+### 10. ⚙️ Open Mercato Product Configurator
 [![GitHub stars](https://img.shields.io/github/stars/open-mercato/open-mercato?style=social&color=white)](https://github.com/open-mercato/open-mercato/stargazers)
 - **Repository:** [open-mercato/open-mercato](https://github.com/open-mercato/open-mercato)
-- **Stack:** TypeScript, Next.js, PostgreSQL | **License:** Open Source
+- **Stack:** 🟦 TypeScript, ▲ Next.js, 🐘 PostgreSQL | **License:** Open Source
 - **Overview:** Modular open-source CPQ component built for configured products with dynamic rules, mathematical formulas, and Bill of Materials (BOM) rollups evaluated deterministically via a versioned JSON schema.
 - **Best For:** Teams building an open-source quote-to-cash or ERP stack needing CPQ logic and BOM calculations.
 
-### 11. Lotus
+### 11. 🪷 Lotus
 [![GitHub stars](https://img.shields.io/github/stars/uselotus/lotus?style=social&color=white)](https://github.com/uselotus/lotus/stargazers)
 - **Repository:** [uselotus/lotus](https://github.com/uselotus/lotus)
-- **Stack:** Python, Django, React, PostgreSQL | **License:** MIT
+- **Stack:** 🐍 Python, 🎸 Django, ⚛️ React, 🐘 PostgreSQL | **License:** MIT
 - **Overview:** Open-source pricing and packaging infrastructure designed to launch and iterate SaaS pricing plans, track customer metric consumption, and manage self-serve product plans.
 - **Best For:** Growth and engineering teams running quick pricing experiments, custom entitlements, and feature gating.
 
-### 12. Akeneo PIM (Community Edition)
+### 12. 🏷️ Akeneo PIM (Community Edition)
 [![GitHub stars](https://img.shields.io/github/stars/akeneo/pim-community-dev?style=social&color=white)](https://github.com/akeneo/pim-community-dev/stargazers)
 - **Repository:** [akeneo/pim-community-dev](https://github.com/akeneo/pim-community-dev)
-- **Stack:** PHP, Symfony, MySQL, Elasticsearch | **License:** OSL-3.0
+- **Stack:** 🐘 PHP, 🎼 Symfony, 🐬 MySQL, 🔍 Elasticsearch | **License:** OSL-3.0
 - **Overview:** Industry-standard Product Information Management (PIM) system dedicated to structuring product data, attribute matrices, and multi-channel localized catalog enrichment.
 - **Best For:** Omnichannel retailers and merchants harmonizing thousands of attributes and product families.
 
-### 13. entirius-django-pricemanager
+### 13. 🛡️ entirius-django-pricemanager
 [![GitHub stars](https://img.shields.io/github/stars/entirius/entirius-django-pricemanager?style=social&color=white)](https://github.com/entirius/entirius-django-pricemanager/stargazers)
 - **Repository:** [entirius/entirius-django-pricemanager](https://github.com/entirius/entirius-django-pricemanager)
-- **Stack:** Python, Django, PostgreSQL | **License:** MPL-2.0
+- **Stack:** 🐍 Python, 🎸 Django, 🐘 PostgreSQL | **License:** MPL-2.0
 - **Overview:** Lightweight Django module for modular e-commerce price management. Features net/gross tax calculation, country/channel pricing, write guards (margin floors), and complete append-only price change auditing.
 - **Best For:** Python/Django developers building tailored e-commerce backends requiring historical price auditing and margin safeguards.
 
@@ -156,7 +168,7 @@ Community-driven, self-hostable product catalogs, pricing engines, usage meterin
 
 ## 📊 Feature Comparison Matrix
 
-| System / Tool | License Model | Deployment | Product Master / PIM | Price Books / Rules | CPQ Configurator | Usage Metering | Primary Audience |
+| 🛠️ System / Tool | 📜 License Model | ☁️ Deployment | 📦 Product Master / PIM | 🏷️ Price Books / Rules | ⚙️ CPQ Configurator | ⏱️ Usage Metering | 🎯 Primary Audience |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | **Salesforce CPQ** | Proprietary | Cloud | ✅ Full | ✅ Price Books + Exceptions | ✅ Advanced | 🟡 Via Billing | Enterprise CRM / Direct Sales |
 | **Chargebee** | Proprietary | Cloud | ✅ Full | ✅ Multi-Model Rates | 🟡 Add-on | ✅ Advanced SQL | Subscription & Usage SaaS |
@@ -198,10 +210,25 @@ Sales-Led CPQ         Billing & Metering                        Complete PIM / M
 Conga, Tacton)
 ```
 
-1. **Enterprise Sales & Custom Products:** If you have field sales reps configuring multi-line quotes with intricate discount rules and technical constraints, opt for **Salesforce CPQ** or **DealHub** (or **Tacton** if configuring industrial machinery with CAD/BOM validation).
-2. **Subscription & High-Volume Metering:** If your products rely on recurring monthly fees, prepaid bundles, seat counts, or API token consumption, evaluate **Chargebee** or **Zuora** on SaaS, or deploy **Lago** and **OpenMeter** for self-hosted data ownership.
-3. **Product Information Foundation (PIM):** If you are managing 50,000+ SKUs across multiple distributor feeds and need localized asset enrichment before computing pricing, start with **Unopim**, **Pimcore**, or **Akeneo PIM**.
-4. **All-in-One Open-Source ERP:** If you want quote generation, price lists, inventory, and ledger accounting unified without SaaS seat licenses, deploy **Odoo** or **ERPNext**.
+1. 💼 **Enterprise Sales & Custom Products:** If you have field sales reps configuring multi-line quotes with intricate discount rules and technical constraints, opt for **Salesforce CPQ** or **DealHub** (or **Tacton** if configuring industrial machinery with CAD/BOM validation).
+2. 🔄 **Subscription & High-Volume Metering:** If your products rely on recurring monthly fees, prepaid bundles, seat counts, or API token consumption, evaluate **Chargebee** or **Zuora** on SaaS, or deploy **Lago** and **OpenMeter** for self-hosted data ownership.
+3. 🗃️ **Product Information Foundation (PIM):** If you are managing 50,000+ SKUs across multiple distributor feeds and need localized asset enrichment before computing pricing, start with **Unopim**, **Pimcore**, or **Akeneo PIM**.
+4. 🏗️ **All-in-One Open-Source ERP:** If you want quote generation, price lists, inventory, and ledger accounting unified without SaaS seat licenses, deploy **Odoo** or **ERPNext**.
+
+---
+
+## 💖 Support
+
+If you found this curated list helpful, please consider showing your support:
+- ⭐ **Star this repository** to help others discover it!
+- 🍴 **Fork it** and contribute your favorite catalog and pricing tools.
+- 📢 **Share it** with friends, team members, and the broader tech community.
+- ☕ **Buy me a coffee:** You can support ongoing maintenance via the [GitHub Sponsors Dashboard](https://github.com/sponsors/ishandutta2007).
+
+---
+
+##  Star History
+[![Star History Chart](https://www.star-history.com/svg?repos=ishandutta2007/Awesome-Product-Pricing-Catalog-Management&type=date&legend=top-left)](https://www.star-history.com/#ishandutta2007/Awesome-Product-Pricing-Catalog-Management&type=date&legend=top-left)
 
 ---
 
