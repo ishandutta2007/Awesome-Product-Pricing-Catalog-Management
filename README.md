@@ -71,94 +71,94 @@ Enterprise cloud solutions sorted in descending order of vendor scale (market va
 
 ## 🟩 Open-Source Software
 
-Community-driven, self-hostable product catalogs, pricing engines, usage metering frameworks, and PIM repositories sorted in descending order by GitHub stars:
+Community-driven, self-hostable product catalogs, pricing engines, usage metering frameworks, and PIM repositories sorted in descending order by GitHub_Stars:
 
 ### 1. 💼 Odoo (Product & Pricelist)
-[![GitHub stars](https://img.shields.io/github/stars/odoo/odoo?style=social&color=white)](https://github.com/odoo/odoo/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/odoo/odoo?style=social&color=white)](https://github.com/odoo/odoo/stargazers)
 - **Repository:** [odoo/odoo](https://github.com/odoo/odoo)
 - **Stack:** 🐍 Python, 🟨 JavaScript, 🐘 PostgreSQL | **License:** LGPL-3.0
 - **Overview:** Fully featured ERP suite with native **Product & Pricelist** management. Supports advanced pricing rules, currency conversions, margin computations, volume discounts, and customer-specific price books.
 - **Best For:** Organizations seeking a complete business management suite with integrated catalog and pricing workflows.
 
 ### 2. 📦 ERPNext (Item & Price List)
-[![GitHub stars](https://img.shields.io/github/stars/frappe/erpnext?style=social&color=white)](https://github.com/frappe/erpnext/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/frappe/erpnext?style=social&color=white)](https://github.com/frappe/erpnext/stargazers)
 - **Repository:** [frappe/erpnext](https://github.com/frappe/erpnext)
 - **Stack:** 🐍 Python, ☕ Frappe Framework, 🐬 MariaDB | **License:** GPL-3.0
 - **Overview:** Open-source ERP providing granular **Item Master** configuration (variants, attributes, UOMs, serials) paired with versatile **Price Lists** segmented by currency, territory, and customer groups.
 - **Best For:** Teams wanting self-hosted, customizable item masters and multi-currency pricing integrated with manufacturing and sales.
 
 ### 3. 🛍️ Medusa (Pricing & Product Module)
-[![GitHub stars](https://img.shields.io/github/stars/medusajs/medusa?style=social&color=white)](https://github.com/medusajs/medusa/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/medusajs/medusa?style=social&color=white)](https://github.com/medusajs/medusa/stargazers)
 - **Repository:** [medusajs/medusa](https://github.com/medusajs/medusa)
 - **Stack:** 🟩 Node.js, 🟦 TypeScript, 🐘 PostgreSQL | **License:** MIT
 - **Overview:** Headless commerce engine featuring dedicated `@medusajs/pricing` and `@medusajs/product` modules. Provides price lists, multi-currency rule sets, quantity tiers, and promotion engines via headless APIs.
 - **Best For:** Developers building bespoke digital commerce platforms needing API-first pricing engine microservices.
 
 ### 4. 🛒 Saleor
-[![GitHub stars](https://img.shields.io/github/stars/saleor/saleor?style=social&color=white)](https://github.com/saleor/saleor/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/saleor/saleor?style=social&color=white)](https://github.com/saleor/saleor/stargazers)
 - **Repository:** [saleor/saleor](https://github.com/saleor/saleor)
 - **Stack:** 🐍 Python, 🎸 Django, 🕸️ GraphQL, 🐘 PostgreSQL | **License:** BSD-3-Clause
 - **Overview:** High-performance headless GraphQL commerce platform with multi-channel product catalogs, localized pricing, custom attribute matrices, and tax-inclusive/exclusive pricing structures.
 - **Best For:** High-volume composable commerce architectures needing granular multi-channel catalog control.
 
 ### 5. 🗂️ Unopim
-[![GitHub stars](https://img.shields.io/github/stars/unopim/unopim?style=social&color=white)](https://github.com/unopim/unopim/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/unopim/unopim?style=social&color=white)](https://github.com/unopim/unopim/stargazers)
 - **Repository:** [unopim/unopim](https://github.com/unopim/unopim)
 - **Stack:** 🐘 PHP, 🔴 Laravel, 🐬 MySQL / 🐘 PostgreSQL | **License:** MIT
 - **Overview:** Modern open-source Product Information Management (PIM) and Digital Asset Management (DAM) system engineered to manage and enrich millions of SKUs with complex attribute families.
 - **Best For:** Teams requiring a robust, scalable product master foundation before layering downstream pricing algorithms.
 
 ### 6. 🦩 Lago
-[![GitHub stars](https://img.shields.io/github/stars/getlago/lago?style=social&color=white)](https://github.com/getlago/lago/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/getlago/lago?style=social&color=white)](https://github.com/getlago/lago/stargazers)
 - **Repository:** [getlago/lago](https://github.com/getlago/lago)
 - **Stack:** 💎 Ruby on Rails, 🐹 Go, 🐘 PostgreSQL | **License:** AGPL-3.0
 - **Overview:** Open-source metering and usage-based billing engine. Provides an API-driven product plan catalog supporting hybrid pricing, subscription add-ons, volume tiers, pay-as-you-go meters, and prepaid credits.
 - **Best For:** SaaS, AI, and API companies looking for an open-source pricing engine to meter and rate consumption.
 
 ### 7. 💳 Kill Bill
-[![GitHub stars](https://img.shields.io/github/stars/killbill/killbill?style=social&color=white)](https://github.com/killbill/killbill/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/killbill/killbill?style=social&color=white)](https://github.com/killbill/killbill/stargazers)
 - **Repository:** [killbill/killbill](https://github.com/killbill/killbill)
 - **Stack:** ☕ Java, 🐬 MySQL / 🐘 PostgreSQL | **License:** Apache-2.0
 - **Overview:** Enterprise-grade open-source subscription billing and payments platform. Features an XML-based catalog system supporting complex plan phases, pricing alignment, price overrides, and trial rules.
 - **Best For:** Large organizations needing financial-grade subscription catalog configuration with complete data sovereignty.
 
 ### 8. 🗄️ Pimcore
-[![GitHub stars](https://img.shields.io/github/stars/pimcore/pimcore?style=social&color=white)](https://github.com/pimcore/pimcore/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/pimcore/pimcore?style=social&color=white)](https://github.com/pimcore/pimcore/stargazers)
 - **Repository:** [pimcore/pimcore](https://github.com/pimcore/pimcore)
 - **Stack:** 🐘 PHP, 🎼 Symfony, 🐬 MySQL | **License:** GPL-3.0
 - **Overview:** Enterprise open-source platform combining PIM, MDM (Master Data Management), and DAM. Manages product structures, relations, multi-channel classification, and pricing asset associations.
 - **Best For:** Enterprises requiring centralized master data management across complex global supply chains.
 
 ### 9. ⚡ OpenMeter
-[![GitHub stars](https://img.shields.io/github/stars/openmeterio/openmeter?style=social&color=white)](https://github.com/openmeterio/openmeter)
+[![GitHub_Stars](https://img.shields.io/github/stars/openmeterio/openmeter?style=social&color=white)](https://github.com/openmeterio/openmeter)
 - **Repository:** [openmeterio/openmeter](https://github.com/openmeterio/openmeter)
 - **Stack:** 🐹 Go, 🟡 ClickHouse, 🐘 PostgreSQL, 📨 Kafka | **License:** Apache-2.0
 - **Overview:** Cloud-native, high-throughput usage metering engine that collects events at scale and maps real-time consumption into dynamic price calculations and entitlement rules.
 - **Best For:** Cloud infrastructure, LLM/AI token metering, and developer platforms needing low-latency usage rating.
 
 ### 10. ⚙️ Open Mercato Product Configurator
-[![GitHub stars](https://img.shields.io/github/stars/open-mercato/open-mercato?style=social&color=white)](https://github.com/open-mercato/open-mercato/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/open-mercato/open-mercato?style=social&color=white)](https://github.com/open-mercato/open-mercato/stargazers)
 - **Repository:** [open-mercato/open-mercato](https://github.com/open-mercato/open-mercato)
 - **Stack:** 🟦 TypeScript, ▲ Next.js, 🐘 PostgreSQL | **License:** Open Source
 - **Overview:** Modular open-source CPQ component built for configured products with dynamic rules, mathematical formulas, and Bill of Materials (BOM) rollups evaluated deterministically via a versioned JSON schema.
 - **Best For:** Teams building an open-source quote-to-cash or ERP stack needing CPQ logic and BOM calculations.
 
 ### 11. 🪷 Lotus
-[![GitHub stars](https://img.shields.io/github/stars/uselotus/lotus?style=social&color=white)](https://github.com/uselotus/lotus/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/uselotus/lotus?style=social&color=white)](https://github.com/uselotus/lotus/stargazers)
 - **Repository:** [uselotus/lotus](https://github.com/uselotus/lotus)
 - **Stack:** 🐍 Python, 🎸 Django, ⚛️ React, 🐘 PostgreSQL | **License:** MIT
 - **Overview:** Open-source pricing and packaging infrastructure designed to launch and iterate SaaS pricing plans, track customer metric consumption, and manage self-serve product plans.
 - **Best For:** Growth and engineering teams running quick pricing experiments, custom entitlements, and feature gating.
 
 ### 12. 🏷️ Akeneo PIM (Community Edition)
-[![GitHub stars](https://img.shields.io/github/stars/akeneo/pim-community-dev?style=social&color=white)](https://github.com/akeneo/pim-community-dev/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/akeneo/pim-community-dev?style=social&color=white)](https://github.com/akeneo/pim-community-dev/stargazers)
 - **Repository:** [akeneo/pim-community-dev](https://github.com/akeneo/pim-community-dev)
 - **Stack:** 🐘 PHP, 🎼 Symfony, 🐬 MySQL, 🔍 Elasticsearch | **License:** OSL-3.0
 - **Overview:** Industry-standard Product Information Management (PIM) system dedicated to structuring product data, attribute matrices, and multi-channel localized catalog enrichment.
 - **Best For:** Omnichannel retailers and merchants harmonizing thousands of attributes and product families.
 
 ### 13. 🛡️ entirius-django-pricemanager
-[![GitHub stars](https://img.shields.io/github/stars/entirius/entirius-django-pricemanager?style=social&color=white)](https://github.com/entirius/entirius-django-pricemanager/stargazers)
+[![GitHub_Stars](https://img.shields.io/github/stars/entirius/entirius-django-pricemanager?style=social&color=white)](https://github.com/entirius/entirius-django-pricemanager/stargazers)
 - **Repository:** [entirius/entirius-django-pricemanager](https://github.com/entirius/entirius-django-pricemanager)
 - **Stack:** 🐍 Python, 🎸 Django, 🐘 PostgreSQL | **License:** MPL-2.0
 - **Overview:** Lightweight Django module for modular e-commerce price management. Features net/gross tax calculation, country/channel pricing, write guards (margin floors), and complete append-only price change auditing.
@@ -237,7 +237,7 @@ If you found this curated list helpful, please consider showing your support:
 Contributions are welcome! Please check out our contribution guidelines below:
 
 - To add a new platform or tool, submit a PR adding the tool under the appropriate section.
-- For open-source tools, include the repository URL, stack, license, primary use case, and keep repositories ordered by GitHub star count.
+- For open-source tools, include the repository URL, stack, license, primary use case, and keep repositories ordered by GitHub Stars_Count.
 - For SaaS solutions, ensure transparent disclosure of entry-tier pricing models and free trial/sandbox specifications.
 
 ---
